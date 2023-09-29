@@ -15,11 +15,11 @@ int main(){
     int operation = 0;
 
     printf("Input the two numbers you wish to do math with:\n");
-    scanf("%d", userInput1);
-    scanf("%d", userInput2);
+    scanf("%lf", &userInput1);
+    scanf("%lf", &userInput2);
 
     printf("Choose the operation you want: 1: Addition, 2: Subtraction, 3: Multiplication, 4: Division\n");
-    scanf("%d", operation);
+    scanf("%d", &operation);
 
     switch(operation){
         case(1):
