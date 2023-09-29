@@ -7,6 +7,7 @@
 
 double addition(double x, double y);
 double subtraction(double x, double y);
+double multiplication(double x, double y);
 
 int main(){
     double userInput1 = 0, userInput2 = 0;
@@ -27,7 +28,7 @@ int main(){
             printf("Subtracting your two numbers: %lf - %lf = %lf", userInput1, userInput2, subtraction(userInput1, userInput2));
             break;
         case(3):
-            printf("Multiplication TBA");
+            printf("Multiplicating your two numbers: %lf * %lf = %lf", userInput1, userInput2, multiplication(userInput1, userInput2));
             break;
         case(4):
             printf("Division TBA");
@@ -43,4 +44,8 @@ double addition(double x, double y){
 
 double subtraction(double x, double y){
     return x - y;
+}
+
+double multiplication(double x, double y){
+    return x * y;
 }
