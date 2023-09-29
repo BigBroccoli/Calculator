@@ -21,6 +21,10 @@ int main(){
     printf("Choose the operation you want: 1: Addition, 2: Subtraction, 3: Multiplication, 4: Division\n");
     scanf("%d", &operation);
 
+    while(operation < 1 || operation > 4){
+        printf("Choose the operation you want: 1: Addition, 2: Subtraction, 3: Multiplication, 4: Division\n");
+        scanf("%d", &operation);
+    }
     switch(operation){
         case(1):
             printf("Adding your two numbers: %lf + %lf = %lf", userInput1, userInput2, addition(userInput1, userInput2));
