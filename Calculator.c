@@ -61,5 +61,8 @@ double multiplication(double x, double y){
 }
 
 double division(double x, double y){
+    if (y == 0){
+        printf("Cannot divide by zero.");
+    }
     return x / y;
 }
