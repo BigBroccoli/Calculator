@@ -6,6 +6,7 @@
 #include <stdio.h>
 
 double addition(double x, double y);
+double subtraction(double x, double y);
 
 int main(){
     double userInput1 = 0, userInput2 = 0;
@@ -20,10 +21,10 @@ int main(){
 
     switch(operation){
         case(1):
-            printf("Adding your two numbers together: %lf + %lf = %lf", userInput1, userInput2, addition(userInput1, userInput2));
+            printf("Adding your two numbers: %lf + %lf = %lf", userInput1, userInput2, addition(userInput1, userInput2));
             break;
         case(2):
-            printf("Subtraction TBA");
+            printf("Subtracting your two numbers: %lf - %lf = %lf", userInput1, userInput2, subtraction(userInput1, userInput2));
             break;
         case(3):
             printf("Multiplication TBA");
@@ -31,9 +32,15 @@ int main(){
         case(4):
             printf("Division TBA");
             break;
+        default:
+            break;
     }
 }
 
 double addition(double x, double y){
     return x + y;
+}
+
+double subtraction(double x, double y){
+    return x - y;
 }
